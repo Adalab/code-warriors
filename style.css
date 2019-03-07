@@ -1,0 +1,158 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box 
+}
+.pad-bot-30 {
+    padding-bottom: 30px
+}
+body {
+    color: #54585a;
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 24px
+}
+/*STRENGTHS AND WEAKNESSES*/
+.section-desciption__title{
+    color: #099d8d;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 10px
+}
+.section-desciption {
+    padding: 22px 15px;
+    text-align: center;
+    margin: 10px 0;
+}
+.light-grey-blue {
+    background-color: #e5e3e3;
+}
+.arrow-white {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 24px solid #fff;
+}
+/*ABOUT US*/
+.second-title{ 
+    text-align:center;
+    text-transform: uppercase;
+    color: #099d8d;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.paragraph{
+    text-align:center;
+    color: #54585a;
+    margin: 0 15px 30px 15px;
+    
+}
+
+/* HEADER */
+
+.header-home{
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    font-family: Rubik-Medium;
+   
+
+}
+.group-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #099d8d;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    height: 60px; /*cambiar cuando aprendamos responsive. En zeplin vienen height y width específicas, de momento no as pongo*/
+    
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color: #ffffff;
+    }
+.menu-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #14d9c4;
+   
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    height: 45px; /*cambiar cuando aprendamos responsive*/
+    }
+.menu-options-link {
+    font-family: Rubik;
+    font-size: 15px;
+    /*font-weight: 500;*/
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    }
+.menu-options-link:hover{/*no se comporta como pensamos queda pendiente*/
+    font-size: 125%;
+    color: #b8b8b9;
+}
+
+/* ADALABER SECTION */
+.rectangle-all-info{
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+.personal-pic
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08); 
+     
+}
+.name {
+    font-size: 20px;
+    color:  #000000;
+    font-weight: normal;
+    margin-bottom: 10px;
+
+}
+.font{
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+ .rrss-container {
+     list-style: none;
+
+ }
+ .rss-addres{
+     display: inline;
+     position: relative;
+     padding: 0 10px;
+     color: #099d8d;
+ }
+ 
+ .rss-addres::before {
+    content: "·";
+    position: absolute;     
+    left: -5px;
+ }
+
+ .rss-addres:first-child::before{ 
+     content: none;
+
+ }
+ .rss-addres a{
+    color: #099d8d;
+ }
