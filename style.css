@@ -1,32 +1,42 @@
 * {
-    padding:0;
+    padding: 0;
     margin: 0;
-    box-sizing: border-box 
+    box-sizing: border-box
 }
+
+.anchor {
+    padding-top: 130px;
+    margin-top: -50px;
+}
+
 .pad-bot-30 {
     padding-bottom: 30px
 }
+
 body {
     color: #54585a;
     font-family: Rubik;
     font-size: 16px;
     line-height: 24px
 }
+
 /*STRENGTHS AND WEAKNESSES*/
-.section-desciption__title{
+.section-desciption__title {
     color: #099d8d;
     font-weight: 500;
     font-size: 22px;
     margin-bottom: 10px
 }
+
 .section-desciption {
-    padding: 22px 15px;
+    padding: 22px 15px 35px;
     text-align: center;
-    margin: 10px 0;
 }
+
 .light-grey-blue {
     background-color: #e5e3e3;
 }
+
 .arrow-white {
     width: 0;
     height: 0;
@@ -34,32 +44,39 @@ body {
     border-right: 25px solid transparent;
     border-top: 24px solid #fff;
 }
-/*ABOUT US*/
-.second-title{ 
-    text-align:center;
+.modules {
+    width: 100%
+}
+
+/*TEAM*/
+.second-title {
+    text-align: center;
     text-transform: uppercase;
     color: #099d8d;
     margin-bottom: 15px;
     font-size: 24px;
 }
-.paragraph{
-    text-align:center;
+
+.paragraph {
+    text-align: center;
     color: #54585a;
     margin: 0 15px 30px 15px;
-    
 }
 
 /* HEADER */
 
-.header-home{
+.header-home {
+    position: fixed;
+    width: 100vw;
     display: flex;
     color: #ffffff;
     flex-direction: column;
     font-family: Rubik-Medium;
-   
-
+    z-index: 100;
+    opacity: 0.9;
 }
-.group-name{
+
+.group-name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,8 +84,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
-    height: 60px; /*cambiar cuando aprendamos responsive. En zeplin vienen height y width específicas, de momento no as pongo*/
-    
+    height: 60px;
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
@@ -76,83 +92,615 @@ body {
     line-height: 1.88;
     letter-spacing: normal;
     color: #ffffff;
-    }
-.menu-options{
+}
+
+.menu-options {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: #14d9c4;
-   
     margin: 0;
     list-style: none;
     padding: 0;
-    height: 45px; /*cambiar cuando aprendamos responsive*/
-    }
+    height: 45px;
+}
+
 .menu-options-link {
     font-family: Rubik;
     font-size: 15px;
-    /*font-weight: 500;*/
     font-style: normal;
     font-stretch: normal;
     line-height: 2;
     letter-spacing: normal;
     text-transform: uppercase;
     text-decoration: none;
-    color:white;
-    }
-.menu-options-link:hover{/*no se comporta como pensamos queda pendiente*/
+    color: white;
+}
+
+.menu-options-link:hover {
     font-size: 125%;
-    color: #b8b8b9;
 }
 
 /* ADALABER SECTION */
-.rectangle-all-info{
+
+/* He renombrado y añadido clases para manejarme mejor */
+
+.rectangle-all-info {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     text-align: center;
-    border-radius: 4px;
 }
-.personal-pic
-{
+
+.container-personal-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.personal-pic {
+    align-content: center;
     width: 180px;
     height: 180px;
     border-radius: 4px;
-    border: solid 5px rgba(0, 0, 0, 0.08); 
-     
+    border: solid 5px rgba(0, 0, 0, 0.08);
 }
+
 .name {
     font-size: 20px;
-    color:  #000000;
+    color: #000000;
     font-weight: normal;
     margin-bottom: 10px;
-
 }
-.font{
 
+.perinfo-container {
     font-family: 'Open Sans', sans-serif;
 }
 
- .rrss-container {
-     list-style: none;
+/* esta clase la compartia con Eva en un principio. Pero la he definido nueva para que solo afecte a mi seccion */
 
- }
- .rss-addres{
-     display: inline;
-     position: relative;
-     padding: 0 10px;
-     color: #099d8d;
- }
- 
- .rss-addres::before {
-    content: "·";
-    position: absolute;     
-    left: -5px;
- }
+.paragraph-info {
+    text-align: center;
+    color: #54585a;
+    margin: 0 15px 30px 15px;
+}
 
- .rss-addres:first-child::before{ 
-     content: none;
+.rrss-container {
+    list-style: none;
+}
 
- }
- .rss-addres a{
+.rss-addres {
+    display: inline;
+    position: relative;
+    padding: 0 10px;
     color: #099d8d;
- }
+}
+
+.rss-addres::before {
+    content: "·";
+    position: absolute;
+    left: -5px;
+}
+
+.rss-addres:first-child::before {
+    content: none;
+}
+
+.rss-addres a {
+    color: #099d8d;
+}
+
+/* FOOTER */
+
+.footer-home {
+    display: block;
+    background-color: white;
+    height: 250px;
+    border-top: 1px solid #b8b8b9;
+    margin-top: 40px; 
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b8b8b9;
+    font-size: 14px;
+    font-family: Rubik;
+    margin: 30px 0 20px 0;
+}
+
+.footer-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.footer-options-link {
+    font-family: Rubik;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #54585a;
+    opacity: 0.75;
+}
+
+.box-logo-adalab {
+    display: block;
+    /*display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center; */
+    height: 45px; 
+    /* width: 115.9px; */
+    text-align: center; 
+    background: url(images/logo-adalab.png); /* cambié la imagen a fondo porque era más fácil controlarla */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 30px 0 45px 0; 
+}
+
+/* .logo-adalab {
+    width: 115.9px;  
+}  */
+
+/* HERO */
+
+.container-hero {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-image {
+    height: 421px;
+    width: 100vw;
+    background: url(images/hero-image-desktop.jpg);
+    background-size: cover;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+}
+
+.container-moto {
+    /* container size properties */
+    height: 80px;
+    /*movil */
+    width: 290px;
+    /* container position */
+    display: flex;
+    z-index: 5;
+    position: absolute;
+    top: 381px;
+    float: right;
+    /* text properties */
+    background-color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'OpenSans', sans-serif;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A PARTIR DE AQUI COLOCO LAS VERSIONES RESPONSIVE TABLET Y SEGUIDA LA DE DESKTOP */
+
+/* STYLES TABLE VERSION ---------------------------------------------------------------------*/
+
+/* ADALABERS SECTION */
+
+@media all and (min-width: 768px) {
+    .rectangle-all-info {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+    }
+    /* he añadido clases nuevas para poder trabajar la direccion y alineado izq derch  */
+    .r-left {
+        flex-direction: row;
+        text-align: left;
+    }
+    .r-right {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    .personal-pic {
+        align-content: center;
+        width: 205px;
+        height: 205px;
+        border-radius: 4px;
+        border: solid 5px rgba(0, 0, 0, 0.08);
+    }
+    .name {
+        font-size: 20px;
+        color: #000000;
+        font-weight: normal;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /* clase izq y drch para controlar los parrafos alternos*/
+    .p-right {
+        text-align: right;
+    }
+    .p-left {
+        text-align: left;
+    }
+    .rrss-container {
+        list-style: none;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /* Strengths & Weaknesses */
+    .section-desciption {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 55px 35px 55px
+    }
+    .arrow-white {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .modules:first-of-type {
+        margin-right: 45px;
+    }
+    /*Team*/
+  
+    .paragraph {
+        text-align: center;
+        color: #54585a;
+        margin: 0 168px 30px 168px;
+    }
+
+
+/* Footer RESPONSIVE  */
+
+    .footer-home{
+        Position:relative;
+        background-color: white;
+        height: 170px;
+        border-top: 1px solid #b8b8b9;
+        margin-top: 40px; 
+        
+    }
+    .footer-options{
+        
+        display: inline-block;
+        margin: 0;
+        height: 90px;
+        width: 324px;
+        text-align: right;
+        position:absolute;
+        right: 45px;
+        top:24px;
+
+    }  
+    .footer-options-link{
+        display: inline-block;
+        font-family: Rubik;
+        font-style: normal;
+        font-stretch: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color:#54585a;
+        opacity: 0.75;
+        }
+
+    .copyright{
+        display: inline-block; 
+        color: #b8b8b9;
+        font-size:14px;
+        font-family: Rubik; 
+        margin: 0; 
+        position: absolute;
+        left: 45px;
+        top:24px;
+        }
+    .box-logo-adalab{
+        display: inline-block;
+        margin-bottom:45px;
+        margin-left:45px;
+        height:45px;
+        width: 115.9px;
+        background: url(images/logo-adalab.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        position: absolute;
+        left: 45px;
+        bottom: 60px;
+        }
+    
+
+    /* HEADER */
+
+    .header-home{
+        position:fixed;
+        width: 100vw;
+        display: flex;
+        color: #ffffff;
+        flex-direction: row;
+        font-family: Rubik-Medium;
+        z-index: 100;
+        opacity: 0.9;
+        height:60px;
+        background-color: #099d8d;
+       
+        align-items: baseline;
+        justify-content: space-between;
+
+    }
+    .group-name{
+        display: flex;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 30px;
+        margin: 14px 0 16px 45px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: lighter;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .menu-options{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 30px;
+        margin: 14px 45px 16px 0;
+        list-style: none;
+        padding: 0;
+        background-color: #099d8d;
+    }
+    .menu-options-link {
+        font-family: Rubik;
+        font-size: 15px;
+        /*font-weight: 500;*/
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:white;
+    }
+    .menu-options-link:hover{
+        font-size: 125%;
+    }
+    /* HERO TABLET */
+    .container-moto{
+        /* container size properties */
+        height: 80px; /*tablet */ 
+        width: 441px;
+        /* container position */
+        position: absolute; 
+        top: 341px;
+        left: 46px;
+        
+        /* text properties */
+        background-color: white;
+        opacity: 0.9;
+        justify-content: center;
+        
+    }
+}
+
+
+
+/* STYLES DESKTOP VERSION ------------------------------------------*/
+
+/* ADALABER SECTION */
+
+@media all and (min-width: 1200px) {
+    .rectangle-all-info {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+    }
+    /* iz y derecha para controlar el bloques alternos junto con img */
+    .r-left {
+        flex-direction: row;
+        text-align: left;
+        margin-left: 138px;
+    }
+    .r-right {
+        flex-direction: row-reverse;
+        text-align: right;
+        margin-right: 130px;
+    }
+    .personal-pic {
+        align-content: center;
+        width: 278px;
+        height: 278px;
+        border-radius: 5.5px;
+        border: solid 7px rgba(0, 0, 0, 0.08);
+    }
+    .name {
+        font-size: 20px;
+        color: #000000;
+        font-weight: normal;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /* clase iz y dercha para controlar parrafos alternos */
+    .p-right {
+        width: 440px;
+        text-align: right;
+    }
+    .p-left {
+        width: 440px;
+        text-align: left;
+    }
+    .rrss-container {
+        list-style: none;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /* Strengths & Weaknesses */
+    .content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .section-desciption {
+        padding: 55px 0 55px
+    }
+
+
+ /* HEADER DEKTOP*/
+
+    .header-home{
+        position:fixed;
+        width: 100vw;
+        display: flex;
+        color: #ffffff;
+        flex-direction: row;
+        font-family: Rubik-Medium;
+        z-index: 100;
+        opacity: 0.9;
+        height:60px;
+        background-color: #099d8d;
+        align-items: baseline;
+        justify-content: space-between;
+
+    }
+    .group-name{
+        display: flex;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 30px;
+        margin: 15px 0 15px 142px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: lighter;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .menu-options{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 30px;
+        margin: 15px 138px 15px 0;
+        list-style: none;
+        padding: 0;
+        background-color: #099d8d;
+    }
+    .menu-options-link {
+        font-family: Rubik;
+        font-size: 15px;
+        /*font-weight: 500;*/
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:white;
+    }
+    .menu-options-link:hover{
+        font-size: 125%;
+    }
+
+
+    /*FOOTER DESKTOP*/
+
+
+    .footer-home{
+        Position:relative;
+        background-color: white;
+        height: 170px;
+        border-top: 1px solid #b8b8b9;
+        margin-top: 40px; 
+        
+    }
+    .footer-options{
+        
+        display: inline-block;
+        margin: 0;
+        height: 90px;
+        width: 324px;
+        text-align: right;
+        position:absolute;
+        right: 138px;
+        top:24px;
+
+    }  
+    .footer-options-link{
+        display: inline-block;
+        font-family: Rubik;
+        font-style: normal;
+        font-stretch: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color:#54585a;
+        opacity: 0.75;
+        }
+
+    .copyright{
+        display: inline-block; 
+        color: #b8b8b9;
+        font-size:14px;
+        font-family: Rubik; 
+        margin: 0; 
+        position: absolute;
+        left: 138px;
+        top:24px;
+        }
+    .box-logo-adalab{
+        display: inline-block;
+        margin-bottom:45px;
+        margin-left:45px;
+        height:45px;
+        width: 115.9px;
+        background: url(images/logo-adalab.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        position: absolute;
+        left: 138px;
+        bottom: 51px;
+        }
+
+
+    /* HERO DESKTOP */
+    .container-moto{
+        /* container size properties */
+        height: 90px; /*tablet */ 
+        width: 574px;
+        /* container position */
+        position: absolute; 
+        top: 331px;
+        left: 138px;
+        
+        /* text properties */
+        background-color: white;
+        opacity: 0.9;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    /* TEAM DESKTOP */
+    .paragraph {
+        text-align: center;
+        color: #54585a;
+        margin: 0 299px 30px 299px;
+    }
+}
