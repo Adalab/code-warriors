@@ -57,11 +57,7 @@ body {
     font-size: 24px;
 }
 
-.paragraph {
-    text-align: center;
-    color: #54585a;
-    margin: 0 15px 30px 15px;
-}
+
 
 /* HEADER */
 
@@ -122,6 +118,7 @@ body {
     font-size: 125%;
 }
 
+
 /* ADALABER SECTION */
 
 /* He renombrado y añadido clases para manejarme mejor */
@@ -157,6 +154,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+.paragraph {
+    text-align: center;
+    color: #54585a;
+    margin: 0 15px 30px 15px;
+}
+
 .rrss-container {
     list-style: none;
 }
@@ -180,8 +184,8 @@ body {
 
 .rss-addres a {
     color: #099d8d;
-}
 
+}
 /* FOOTER */
 
 .footer-home {
