@@ -15,34 +15,18 @@
 </head>
 
 <body>
-    <header class="header-home">
-        <h1 class="group-name">code warriors</h1>
-        <nav>
-            <ul class="menu-options">
-                <li><a class="menu-options-link" href="#id-team">Team</a></li>
-                <li><a class="menu-options-link" href="#id-about-us">About us</a></li>
-                <li><a class="menu-options-link" href="#id-contact">Contact</a></li>
-                <!-- no anchor. pending study of forms -->
-            </ul>
-        </nav>
-    </header>
+
+     <!-- HEADER -->
+    <partial src="_header.html" label="header"></partial>
+
     <main>
 
         <!-- HERO -->
         <partial src="_hero.html"></partial>
         <section>
             <!-- TEAM -->
-            <!-- EVA: añado id="id-team" y clase anchor -->
-            <div class="anchor" id="id-team">
-                <h2 class="second-title">team</h2>
-                <!-- EVA: añado contenido en los dos párrafos -->
-                <p class="paragraph">We are five awesome women from different working environments, with different
-                    lifestyles and different backgrounds, but with one thing in common, we want to become front-end
-                    developers! </p><br>
-                <p class="paragraph">We dear to change our lives and become Code Warriors. Adalab has given us the
-                    opportunity to begin this journey. Where it will take us?... only the future will tell. How about
-                    you help us write a chapter of our story?</p>
-            </div>
+                <partial src="_team.html"></partial>                
+            
             <!-- STRENGTHS AND WEAKNESSES -->
             <div class="light-grey-blue">
                 <div class="content section-desciption">
@@ -204,20 +188,7 @@
 
     <!-- FOOTER SECTION -->
 
-    <footer class="footer-home">
-        <div class="copyright">Code Warrios © 2019</div>
-        <nav>
-            <ul class="footer-options">
-                <li><a class="footer-options-link" href="#id-team">Team</a></li>
-                <li><a class="footer-options-link" href="#id-about-us">About us</a></li>
-                <li><a class="footer-options-link" href="#id-contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="box-logo-adalab">
-            <a href="https://adalab.es/" target="_blank">
-            </a>
-        </div>
-    </footer>
+    <partial src="_footer.html" label="header"></partial>
 
 </body>
 
