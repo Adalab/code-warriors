@@ -1,126 +1,22 @@
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
+@import 'core/variables';
+@import 'layout/body';
 
-.anchor {
-    padding-top: 130px;
-    margin-top: -50px;
-}
 
-.pad-bot-30 {
-    padding-bottom: 30px
-}
-
-body {
-    color: #54585a;
-    font-family: Rubik;
-    font-size: 16px;
-    line-height: 24px
-}
-
-/*STRENGTHS AND WEAKNESSES*/
-.section-desciption__title {
-    color: #099d8d;
-    font-weight: 500;
-    font-size: 22px;
-    margin-bottom: 10px
-}
-
-.section-desciption {
-    padding: 22px 15px 35px;
-    text-align: center;
-}
-
-.light-grey-blue {
-    background-color: #e5e3e3;
-}
-
-.arrow-white {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 24px solid #fff;
-}
-.modules {
-    width: 100%
-}
+/*Strenghts*/
+@import 'layout/strenghts';
 
 /*TEAM*/
-.second-title {
-    text-align: center;
-    text-transform: uppercase;
-    color: #099d8d;
-    margin-bottom: 15px;
-    font-size: 24px;
-}
-
-.paragraph {
-    text-align: center;
-    color: #54585a;
-    margin: 0 15px 30px 15px;
-}
+@import 'layout/team';
 
 /* HEADER */
+@import 'layout/header';
 
-.header-home {
-    position: fixed;
-    width: 100vw;
-    display: flex;
-    color: #ffffff;
-    flex-direction: column;
-    font-family: Rubik-Medium;
-    z-index: 100;
-    opacity: 0.9;
-}
-
-.group-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #099d8d;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0;
-    height: 60px;
-    font-family: Rubik;
-    font-size: 16px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.88;
-    letter-spacing: normal;
-    color: #ffffff;
-}
-
-.menu-options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #14d9c4;
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    height: 45px;
-}
-
-.menu-options-link {
-    font-family: Rubik;
-    font-size: 15px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-}
-
-.menu-options-link:hover {
-    font-size: 125%;
-}
 
 /* ADALABER SECTION */
 
@@ -340,28 +236,9 @@ body {
         margin-left: 15px;
     }
     /* Strengths & Weaknesses */
-    .section-desciption {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        padding: 55px 35px 55px
-    }
-    .arrow-white {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    .modules:first-of-type {
-        margin-right: 45px;
-    }
+  
     /*Team*/
   
-    .paragraph {
-        text-align: center;
-        color: #54585a;
-        margin: 0 168px 30px 168px;
-    }
 
 
 /* Footer RESPONSIVE  */
@@ -427,60 +304,8 @@ body {
 
     /* HEADER */
 
-    .header-home{
-        position:fixed;
-        width: 100vw;
-        display: flex;
-        color: #ffffff;
-        flex-direction: row;
-        font-family: Rubik-Medium;
-        z-index: 100;
-        opacity: 0.9;
-        height:60px;
-        background-color: #099d8d;
-       
-        align-items: baseline;
-        justify-content: space-between;
-
-    }
-    .group-name{
-        display: flex;
-        text-transform: uppercase;
-        font-weight: bold;
-        height: 30px;
-        margin: 14px 0 16px 45px;
-        font-family: Rubik;
-        font-size: 16px;
-        font-weight: lighter;
-        font-style: normal;
-        font-stretch: normal;
-        letter-spacing: normal;
-        color: #ffffff;
-    }
-    .menu-options{
-        display: flex;
-        justify-content: space-between;
-        width: 300px;
-        height: 30px;
-        margin: 14px 45px 16px 0;
-        list-style: none;
-        padding: 0;
-        background-color: #099d8d;
-    }
-    .menu-options-link {
-        font-family: Rubik;
-        font-size: 15px;
-        /*font-weight: 500;*/
-        font-style: normal;
-        font-stretch: normal;
-        letter-spacing: normal;
-        text-transform: uppercase;
-        text-decoration: none;
-        color:white;
-    }
-    .menu-options-link:hover{
-        font-size: 125%;
-    }
+    
+    
     /* HERO TABLET */
     .container-moto{
         /* container size properties */
@@ -563,60 +388,6 @@ body {
 
  /* HEADER DEKTOP*/
 
-    .header-home{
-        position:fixed;
-        width: 100vw;
-        display: flex;
-        color: #ffffff;
-        flex-direction: row;
-        font-family: Rubik-Medium;
-        z-index: 100;
-        opacity: 0.9;
-        height:60px;
-        background-color: #099d8d;
-        align-items: baseline;
-        justify-content: space-between;
-
-    }
-    .group-name{
-        display: flex;
-        text-transform: uppercase;
-        font-weight: bold;
-        height: 30px;
-        margin: 15px 0 15px 142px;
-        font-family: Rubik;
-        font-size: 16px;
-        font-weight: lighter;
-        font-style: normal;
-        font-stretch: normal;
-        letter-spacing: normal;
-        color: #ffffff;
-    }
-    .menu-options{
-        display: flex;
-        justify-content: space-between;
-        width: 300px;
-        height: 30px;
-        margin: 15px 138px 15px 0;
-        list-style: none;
-        padding: 0;
-        background-color: #099d8d;
-    }
-    .menu-options-link {
-        font-family: Rubik;
-        font-size: 15px;
-        /*font-weight: 500;*/
-        font-style: normal;
-        font-stretch: normal;
-        letter-spacing: normal;
-        text-transform: uppercase;
-        text-decoration: none;
-        color:white;
-    }
-    .menu-options-link:hover{
-        font-size: 125%;
-    }
-
 
     /*FOOTER DESKTOP*/
 
@@ -698,9 +469,5 @@ body {
     }
 
     /* TEAM DESKTOP */
-    .paragraph {
-        text-align: center;
-        color: #54585a;
-        margin: 0 299px 30px 299px;
-    }
+   
 }
