@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500">
+    <link rel="stylesheet" href="../assets/scss/contact.css">
+    <title>**code warriors**</title>
+</head>
+
+<body>
+    <header class="header-home">
+        <h1 class="group-name">code warriors</h1>
+        <nav>
+            <ul class="menu-options">
+                <li><a class="menu-options-link" href="#id-team">Team</a></li>
+                <li><a class="menu-options-link" href="#id-about-us">About us</a></li>
+                <li><a class="menu-options-link" href="#id-contact">Contact</a></li>
+                <!-- no anchor. pending study of forms -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-hero">
+            <div class="container-image"></div>
+        </div>
+
+        <div class="contact-section">
+
+            <h2 class="second-title">contact</h2>
+            <p class="paragraph">You can use the form below to get in touch with us. We'll be more than happy to hear
+                form you, so don't hesitate and drop us a line!</p>
+
+
+            <div class="form-instructions">
+                <p>All fields marked with <sup id="asterisk">*</sup> are required</p>
+            </div>
+
+            <form method="post" action="#">
+                <label class="field-description" for="fullName">Nombre completo <sup id="asterisk">*</sup></label>
+                <input class="input-box" type="text" name="fullName" id="fullName" placeholder="Nombre...">
+
+                <label class="field-description" for="email">Email <sup id="asterisk">*</sup></label>
+                <input class="input-box" type="email" name="email" id="email" value="nombre.apellidos@mail.com">
+
+                <label class="field-description" for="phoneNumber">Teléfono</label>
+                <input class="input-box" type="number" name="phoneNumber" id="phoneNumber" placeholder="Ej:123456789">
+
+                <label class="field-description" for="message">Mensaje <sup id="asterisk">*</sup></label>
+                <textarea class="message-box" name="message" id="message"
+                    placeholder="How can we help?"></textarea>
+
+                <label class="invisible" for="submit">Submit button</label>
+                <input class="send-button" type="button" value="Send">
+
+            </form>
+        </div>
+        <footer class="footer-home">
+            <div class="copyright">Code Warrios © 2019</div>
+            <nav>
+                <ul class="footer-options">
+                    <li><a class="footer-options-link" href="#id-team">Team</a></li>
+                    <li><a class="footer-options-link" href="#id-about-us">About us</a></li>
+                    <li><a class="footer-options-link" href="#id-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="box-logo-adalab">
+                <a href="https://adalab.es/" target="_blank">
+                </a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
