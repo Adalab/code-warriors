@@ -1,3 +1,6 @@
+@import './core/variables';
+
+
 * {
     padding: 0;
     margin: 0;
@@ -14,7 +17,7 @@
 }
 
 body {
-    color: #54585a;
+    color:$greyparagraph;
     font-family: Rubik;
     font-size: 16px;
     line-height: 24px
@@ -22,7 +25,7 @@ body {
 
 /*STRENGTHS AND WEAKNESSES*/
 .section-desciption__title {
-    color: #099d8d;
+    color: $greenadalab;
     font-weight: 500;
     font-size: 22px;
     margin-bottom: 10px
@@ -42,7 +45,7 @@ body {
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-top: 24px solid #fff;
+    border-top: 24px solid $snowwhite;
 }
 .modules {
     width: 100%
@@ -52,7 +55,7 @@ body {
 .second-title {
     text-align: center;
     text-transform: uppercase;
-    color: #099d8d;
+    color:$greenadalab;
     margin-bottom: 15px;
     font-size: 24px;
 }
@@ -65,7 +68,7 @@ body {
     position: fixed;
     width: 100vw;
     display: flex;
-    color: #ffffff;
+    color:$snowwhite;
     flex-direction: column;
     font-family: Rubik-Medium;
     z-index: 100;
@@ -76,7 +79,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #099d8d;
+    background-color:$greenadalab;
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
@@ -87,7 +90,7 @@ body {
     font-stretch: normal;
     line-height: 1.88;
     letter-spacing: normal;
-    color: #ffffff;
+    color:$snowwhite;
 }
 
 .menu-options {
@@ -122,7 +125,6 @@ body {
 /* ADALABER SECTION */
 
 /* He renombrado y añadido clases para manejarme mejor */
-@import './core/variables';
 
 .rectangle-all-info {
     display: flex;
@@ -160,7 +162,7 @@ body {
 
 .paragraph-info {
     text-align: center;
-    color: #54585a;
+    color:$greyparagraph;
     margin: 0 15px 30px 15px;
 }
 
@@ -172,7 +174,7 @@ body {
     display: inline;
     position: relative;
     padding: 0 10px;
-    color: #099d8d;
+    color:$greenadalab;
 }
 
 .rss-addres::before {
@@ -186,16 +188,16 @@ body {
 }
 
 .rss-addres a {
-    color: #099d8d;
+    color:$greenadalab;
 
 }
 /* FOOTER */
 
 .footer-home {
     display: block;
-    background-color: white;
+    background-color: $snowwhite;
     height: 250px;
-    border-top: 1px solid #b8b8b9;
+    border-top: 1px solid $greycopyright;
     margin-top: 40px; 
 }
 
@@ -203,7 +205,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #b8b8b9;
+    color: $greycopyright;
     font-size: 14px;
     font-family: Rubik;
     margin: 30px 0 20px 0;
@@ -226,7 +228,7 @@ body {
     text-decoration: none;
     font-size: 14px;
     line-height: 20px;
-    color: #54585a;
+    color:$greyparagraph;
     opacity: 0.75;
 }
 
@@ -272,7 +274,7 @@ body {
     top: 381px;
     float: right;
     /* text properties */
-    background-color: white;
+    background-color:$snowwhite;
     text-align: center;
     font-size: 24px;
     font-family: 'OpenSans', sans-serif;
@@ -349,7 +351,7 @@ body {
   
     .paragraph {
         text-align: center;
-        color: #54585a;
+        color:$greyparagraph;
         margin: 0 168px 30px 168px;
     }
 
@@ -358,9 +360,9 @@ body {
 
     .footer-home{
         Position:relative;
-        background-color: white;
+        background-color: $snowwhite;
         height: 170px;
-        border-top: 1px solid #b8b8b9;
+        border-top: 1px solid $greycopyright;
         margin-top: 40px; 
         
     }
@@ -385,13 +387,13 @@ body {
         text-decoration: none;
         font-size: 14px;
         line-height: 20px;
-        color:#54585a;
+        color:$greyparagraph;
         opacity: 0.75;
         }
 
     .copyright{
         display: inline-block; 
-        color: #b8b8b9;
+        color: $greycopyright;
         font-size:14px;
         font-family: Rubik; 
         margin: 0; 
@@ -421,13 +423,13 @@ body {
         position:fixed;
         width: 100vw;
         display: flex;
-        color: #ffffff;
+        color: $snowwhite;
         flex-direction: row;
         font-family: Rubik-Medium;
         z-index: 100;
         opacity: 0.9;
         height:60px;
-        background-color: #099d8d;
+        background-color:$greenadalab;
        
         align-items: baseline;
         justify-content: space-between;
@@ -445,7 +447,7 @@ body {
         font-style: normal;
         font-stretch: normal;
         letter-spacing: normal;
-        color: #ffffff;
+        color: $snowwhite;
     }
     .menu-options{
         display: flex;
@@ -455,18 +457,17 @@ body {
         margin: 14px 45px 16px 0;
         list-style: none;
         padding: 0;
-        background-color: #099d8d;
+        background-color:$greenadalab;
     }
     .menu-options-link {
         font-family: Rubik;
         font-size: 15px;
-        /*font-weight: 500;*/
         font-style: normal;
         font-stretch: normal;
         letter-spacing: normal;
         text-transform: uppercase;
         text-decoration: none;
-        color:white;
+        color:$snowwhite;
     }
     .menu-options-link:hover{
         font-size: 125%;
@@ -474,7 +475,7 @@ body {
     /* HERO TABLET */
     .container-moto{
         /* container size properties */
-        height: 80px; /*tablet */ 
+        height: 80px;
         width: 441px;
         /* container position */
         position: absolute; 
@@ -482,7 +483,7 @@ body {
         left: 46px;
         
         /* text properties */
-        background-color: white;
+        background-color: $snowwhite;
         opacity: 0.9;
         justify-content: center;
         
@@ -557,13 +558,13 @@ body {
         position:fixed;
         width: 100vw;
         display: flex;
-        color: #ffffff;
+        color: $snowwhite;
         flex-direction: row;
         font-family: Rubik-Medium;
         z-index: 100;
         opacity: 0.9;
         height:60px;
-        background-color: #099d8d;
+        background-color:$greenadalab;
         align-items: baseline;
         justify-content: space-between;
 
@@ -580,7 +581,7 @@ body {
         font-style: normal;
         font-stretch: normal;
         letter-spacing: normal;
-        color: #ffffff;
+        color:$snowwhite;
     }
     .menu-options{
         display: flex;
@@ -590,18 +591,17 @@ body {
         margin: 15px 138px 15px 0;
         list-style: none;
         padding: 0;
-        background-color: #099d8d;
+        background-color:$greenadalab;
     }
     .menu-options-link {
         font-family: Rubik;
         font-size: 15px;
-        /*font-weight: 500;*/
         font-style: normal;
         font-stretch: normal;
         letter-spacing: normal;
         text-transform: uppercase;
         text-decoration: none;
-        color:white;
+        color:$snowwhite;
     }
     .menu-options-link:hover{
         font-size: 125%;
@@ -613,9 +613,9 @@ body {
 
     .footer-home{
         Position:relative;
-        background-color: white;
+        background-color: $snowwhite;
         height: 170px;
-        border-top: 1px solid #b8b8b9;
+        border-top: 1px solid $greycopyright;
         margin-top: 40px; 
         
     }
@@ -640,13 +640,13 @@ body {
         text-decoration: none;
         font-size: 14px;
         line-height: 20px;
-        color:#54585a;
+        color:$greyparagraph;
         opacity: 0.75;
         }
 
     .copyright{
         display: inline-block; 
-        color: #b8b8b9;
+        color: $greycopyright;
         font-size:14px;
         font-family: Rubik; 
         margin: 0; 
@@ -681,7 +681,7 @@ body {
         left: 138px;
         
         /* text properties */
-        background-color: white;
+        background-color: $snowwhite;
         opacity: 0.9;
         justify-content: center;
         font-size: 24px;
@@ -690,7 +690,7 @@ body {
     /* TEAM DESKTOP */
     .paragraph {
         text-align: center;
-        color: #54585a;
+        color:$greyparagraph;
         margin: 0 299px 30px 299px;
     }
 }
