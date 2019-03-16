@@ -1,0 +1,30 @@
+.second-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $green-adalab;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.paragraph {
+    text-align: center;
+    color: $grey-steel-p;
+    margin: 0 15px 30px 15px;
+}
+
+@media all and (min-width: 768px) {
+.paragraph {
+    text-align: center;
+    color: $grey-steel-p;
+    margin: 0 168px 30px 168px;
+}
+}
+
+@media all and (min-width: 1200px) {
+    .paragraph {
+        text-align: center;
+        color: $grey-steel-p;
+        margin: 0 299px 30px 299px;
+    }
+
+}
