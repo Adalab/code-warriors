@@ -38,19 +38,22 @@
                 <p>All fields marked with <sup id="asterisk">*</sup> are required</p>
             </div>
 
-            <form method="post" action="#">
-                <label class="field-description" for="fullName">Nombre completo <sup id="asterisk">*</sup></label>
+            <form class="form" method="post" action="#">
+                <label class="field-description" for="fullName">Full name <sup id="asterisk">*</sup></label>
                 <input class="input-box" type="text" name="fullName" id="fullName" placeholder="Nombre...">
-
-                <label class="field-description" for="email">Email <sup id="asterisk">*</sup></label>
-                <input class="input-box" type="email" name="email" id="email" value="nombre.apellidos@mail.com">
-
-                <label class="field-description" for="phoneNumber">Teléfono</label>
-                <input class="input-box" type="number" name="phoneNumber" id="phoneNumber" placeholder="Ej:123456789">
-
-                <label class="field-description" for="message">Mensaje <sup id="asterisk">*</sup></label>
-                <textarea class="message-box" name="message" id="message"
-                    placeholder="How can we help?"></textarea>
+                <div class="mailPhone">
+                    <div class="email">
+                        <label class="field-description" for="email">Email <sup id="asterisk">*</sup></label>
+                        <input class="input-box" type="email" name="email" id="email" value="nombre.apellidos@mail.com">
+                    </div>
+                    <div class=phone>
+                        <label class="field-description" for="phoneNumber">Phone number</label>
+                        <input class="input-box" type="number" name="phoneNumber" id="phoneNumber"
+                            placeholder="Ej:123456789">
+                    </div>
+                </div>
+                <label class="field-description" for="message">Message <sup id="asterisk">*</sup></label>
+                <textarea class="message-box" name="message" id="message" placeholder="How can we help?"></textarea>
 
                 <label class="invisible" for="submit">Submit button</label>
                 <input class="send-button" type="button" value="Send">
