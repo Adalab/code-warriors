@@ -1,34 +1,10 @@
 @import './core/variables';
-
-
 @import './layout/body';
-
 @import './layout/header';
-
-
-/*STRENGTHS AND WEAKNESSES*/
 @import './layout/strenghts';
-/*TEAM*/
-
-.second-title {
-    text-align: center;
-    text-transform: uppercase;
-    color:$greenadalab;
-    margin-bottom: 15px;
-    font-size: 24px;
-}
-
-
-
-/* HEADER */
-
-
+@import './layout/team';
 @import './layout/adsection';
 @import './layout/footer';
 @import './layout/hero';
-
-
-/* A PARTIR DE AQUI COLOCO LAS VERSIONES RESPONSIVE TABLET Y SEGUIDA LA DE DESKTOP */
-
 @import './layout/mqtablet';
 @import './layout/mqdesktop';
