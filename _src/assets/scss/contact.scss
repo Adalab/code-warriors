@@ -33,13 +33,15 @@ body {
     font-weight: bold;
     margin: 0;
     height: 60px;
+    color: #ffffff;
+    text-decoration: none;
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.88;
     letter-spacing: normal;
-    color: #ffffff;
+    
 }
 
 .menu-options {
@@ -232,11 +234,12 @@ body {
 }
 
 .container-image {
-    height: 421px;
-    width: 100vw;
-    background: url(../images/hero-image-desktop.jpg);
-    background-size: cover;
-    overflow: hidden;
+    height:421px;
+    width:100vw;
+    max-width:100%;
+    background: url(../images/hero-contact.jpeg);
+    background-size:cover;
+    overflow:hidden;
 }
 
 
