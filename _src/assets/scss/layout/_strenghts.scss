@@ -1,0 +1,26 @@
+.section-desciption__title {
+    color: $greenadalab;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 10px
+}
+
+.section-desciption {
+    padding: 22px 15px 35px;
+    text-align: center;
+}
+
+.light-grey-blue {
+    background-color: $whitegg;
+}
+
+.arrow-white {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 24px solid $snowwhite;
+}
+.modules {
+    width: 100%
+}
