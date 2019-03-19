@@ -4,76 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/contact.css">
-    <title>**code warriors**</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <title>**code warriors!**</title>
 </head>
 
 <body>
-    <header class="header-home">
-        <h1><a class="group-name" href="/index.html">code warriors</a></h1>
-        <nav>
-            <ul class="menu-options">
-                <li><a class="menu-options-link" href="/index.html#id-team">Team</a></li>
-                <li><a class="menu-options-link" href="/index.html#id-about-us">About us</a></li>
-                <li><a class="menu-options-link" href="#id-contact">Contact</a></li>
-                <!-- no anchor. pending study of forms -->
-            </ul>
-        </nav>
-    </header>
-
+    <!-- HEADER -->
+    <partial src="_header-contact.html"></partial>
     <main>
-        <div class="container-hero">
-            <div class="container-image"></div>
-        </div>
+        <!--HERO-CONTACT-->
+        <partial src="_hero-contact.html"></partial>
 
-        <div class="contact-section">
-
-            <h2 class="second-title">contact</h2>
-            <p class="paragraph">You can use the form below to get in touch with us. We'll be more than happy to hear
-                form you, so don't hesitate and drop us a line!</p>
-
-
-            <div class="form-instructions">
-                <p>All fields marked with <sup id="asterisk">*</sup> are required</p>
-            </div>
-
-            <form class="form" method="post" action="#">
-                <label class="field-description" for="fullName">Full name <sup id="asterisk">*</sup></label>
-                <input class="input-box" type="text" name="fullName" id="fullName" placeholder="Nombre...">
-                <div class="mailPhone">
-                    <div class="email">
-                        <label class="field-description" for="email">Email <sup id="asterisk">*</sup></label>
-                        <input class="input-box" type="email" name="email" id="email" value="nombre.apellidos@mail.com">
-                    </div>
-                    <div class=phone>
-                        <label class="field-description" for="phoneNumber">Phone number</label>
-                        <input class="input-box" type="number" name="phoneNumber" id="phoneNumber"
-                            placeholder="Ej:123456789">
-                    </div>
-                </div>
-                <label class="field-description" for="message">Message <sup id="asterisk">*</sup></label>
-                <textarea class="message-box" name="message" id="message" placeholder="How can we help?"></textarea>
-
-                <label class="invisible" for="submit">Submit button</label>
-                <input class="send-button" type="button" value="Send">
-
-            </form>
-        </div>
-        <footer class="footer-home">
-            <div class="copyright">Code Warrios © 2019</div>
-            <nav>
-                <ul class="footer-options">
-                    <li><a class="footer-options-link" href="#id-team">Team</a></li>
-                    <li><a class="footer-options-link" href="#id-about-us">About us</a></li>
-                    <li><a class="footer-options-link" href="#id-contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="box-logo-adalab">
-                <a href="https://adalab.es/" target="_blank">
-                </a>
-            </div>
-        </footer>
+        <!--FORM-CONTACT-->
+        <partial src="_form-contact.html"></partial>
+        <!--FOOTER-->
+        <partial src="_footer.html"></partial>
     </main>
 </body>
 
