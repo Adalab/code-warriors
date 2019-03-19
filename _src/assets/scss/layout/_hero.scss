@@ -37,7 +37,7 @@
     align-items: center;
     animation-name:"moto";
     animation-timing-function: ease;
-    animation-delay: 3s;  
+    animation-delay: 4s;  
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }
@@ -48,10 +48,13 @@ from{
     color:$fullblack;
 }  
 to{
-    font-size: 34px;
+    font-size: 30px;
    font-family: 'Permanent Marker', cursive;
     color: $greenadalab;
     transform: rotate(360deg);
+    line-height: 29px;
+   
+    
 } 
 }
 
