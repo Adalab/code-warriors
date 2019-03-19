@@ -3,16 +3,15 @@
 /* ADALABER SECTION */
 
 @media all and (min-width: 1200px) {
-    .rectangle-all-info {
-        // display: flex;
-        // flex-direction: row;
-        // padding: 15px;
-    }
+    // .rectangle-all-info {
+    //     display: flex;
+    //     flex-direction: row;
+    //     padding: 15px;
+    // }
     .perinfo-container, .rectangle-all-info:nth-child(odd) .perinfo-container{
         grid-column: 2/4;
     }
 
-    /* iz y derecha para controlar el bloques alternos junto con img */
     .r-left {
         flex-direction: row;
         text-align: left;
@@ -38,7 +37,6 @@
         margin-right: 15px;
         margin-left: 15px;
     }
-    /* clase iz y dercha para controlar parrafos alternos */
     .p-right {
         // width: 440px;
         text-align: right;
