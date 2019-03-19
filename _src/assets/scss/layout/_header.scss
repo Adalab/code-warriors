@@ -1,0 +1,57 @@
+
+.header-home {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    color:$snowwhite;
+    flex-direction: column;
+    font-family: $type-letter-medium;
+    z-index: 100;
+    opacity: 0.9;
+}
+
+.group-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$greenadalab;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    height: 60px;
+    font-family: $type-letter;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color:$snowwhite;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $green-hp;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    height: 45px;
+}
+
+.menu-options-link {
+    font-family: $type-letter;
+    font-size: 15px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:$snowwhite;
+}
+
+.menu-options-link:hover {
+    font-size: 125%;
+}
