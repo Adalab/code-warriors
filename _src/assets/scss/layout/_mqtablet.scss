@@ -73,12 +73,19 @@
 /* Footer RESPONSIVE  */
 
     .footer-home{
-        Position:relative;
+        position:relative;
         background-color: $snowwhite;
         height: 170px;
         border-top: 1px solid $greycopyright;
         margin-top: 40px; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         
+    }
+    .row{
+        grid-row: span 2;
+
     }
     .footer-options{
         
@@ -87,9 +94,10 @@
         height: 90px;
         width: 324px;
         text-align: right;
-        position:absolute;
-        right: 45px;
-        top:24px;
+        grid-row: span 2;
+        // // position:absolute;
+        // right: 45px;
+        // top:24px;
 
     }  
     .footer-options-link{
@@ -111,9 +119,11 @@
         font-size:14px;
         font-family: Rubik; 
         margin: 0; 
-        position: absolute;
-        left: 45px;
-        top:24px;
+        grid-column: span 1 ; 
+        // grid-row: span 1; la hemos quitado por que no hace nada
+        // position: absolute;
+        // left: 45px;
+        // top:24px;
         }
     .box-logo-adalab{
         display: inline-block;
@@ -125,9 +135,11 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0;
-        position: absolute;
-        left: 45px;
-        bottom: 60px;
+        grid-column: span 1 ;
+        grid-row: span 1 ;  
+        // position: absolute;
+        // left: 45px;
+        // bottom: 60px;
         }
     
 

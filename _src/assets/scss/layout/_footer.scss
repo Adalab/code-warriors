@@ -2,11 +2,17 @@
 /* FOOTER */
 
 .footer-home {
+    
     display: block;
     background-color: $snowwhite;
     height: 250px;
     border-top: 1px solid $greycopyright;
     margin-top: 40px; 
+    // comienzo desde aqui
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;    
+
 }
 
 .copyright {
