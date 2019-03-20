@@ -32,6 +32,29 @@
     font-size: 24px;
     font-family: 'OpenSans', sans-serif;
     color:$fullblack;
+    transform: rotate(0);
     justify-content: center;
     align-items: center;
+    animation-name:"moto";
+    animation-timing-function: ease;
+    animation-delay: 4s;  
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
+@keyframes moto{
+from{
+    font-size: 24px;
+    font-family: 'OpenSans', sans-serif;
+    color:$fullblack;
+}  
+to{
+    font-size: 30px;
+   font-family: 'Permanent Marker', cursive;
+    color: $greenadalab;
+    transform: rotate(360deg);
+    line-height: 29px;
+   
+    
+} 
+}
+
