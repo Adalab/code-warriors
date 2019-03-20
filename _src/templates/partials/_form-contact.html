@@ -10,11 +10,11 @@
 
         <form class="form" method="post" action="#">
             <label class="field-description" for="fullName">Full name <sup id="asterisk">*</sup></label>
-            <input class="input-box" type="text" name="fullName" id="fullName" placeholder="Full Name...">
+            <input class="input-box" type="text" name="fullName" id="fullName" placeholder="Full Name..." required>
             <div class="mailPhone">
                 <div class="email">
                     <label class="field-description" for="email">Email <sup id="asterisk">*</sup></label>
-                    <input class="input-box" type="email" name="email" id="email" placeholder="name.surname@mail.com">
+                    <input class="input-box" type="email" name="email" id="email" placeholder="name.surname@mail.com" required>
                 </div>
                 <div class=phone>
                     <label class="field-description" for="phoneNumber">Phone number</label>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <label class="field-description" for="message">Message <sup id="asterisk">*</sup></label>
-            <textarea class="message-box" name="message" id="message" placeholder="How can we help?"></textarea>
+            <textarea class="message-box" name="message" id="message" placeholder="How can we help?" required></textarea>
 
             <label class="invisible" for="submit">Submit button</label>
             <input class="send-button" type="button" value="Send">
