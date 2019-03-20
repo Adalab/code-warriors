@@ -199,4 +199,33 @@
         color:$greyparagraph;
         margin: 0 299px 30px 299px;
     }
+     /*CONTACT*/
+  
+     .contact-section {
+        padding: 45px 300px;
+        margin:0;
+        width:100vw;
+    }
+    /* FORM */
+
+    .form{
+        width:100%;
+        display: flex;
+        flex-direction: column;  
+    }
+    .mailPhone {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+    }
+    
+    .email{
+        width:70%;
+        margin-right:22px;
+    }
+
+    .phone{
+        margin-left:22px;
+        width:30%;
+    } 
 }
