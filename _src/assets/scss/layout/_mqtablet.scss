@@ -85,6 +85,8 @@
     }
     .row{
         grid-row: span 2;
+        display: flex;
+        align-items: center;
 
     }
     .footer-options{
@@ -120,10 +122,13 @@
         font-family: Rubik; 
         margin: 0; 
         grid-column: span 1 ; 
+        text-align: center;
         // grid-row: span 1; la hemos quitado por que no hace nada
         // position: absolute;
         // left: 45px;
         // top:24px;
+        // display: flex;
+        // justify-content: center;
         }
     .box-logo-adalab{
         display: inline-block;
@@ -140,6 +145,8 @@
         // position: absolute;
         // left: 45px;
         // bottom: 60px;
+        // align-self: center;
+        // justify-self: center;
         }
     
 
@@ -156,7 +163,6 @@
         opacity: 0.9;
         height:60px;
         background-color:$greenadalab;
-       
         align-items: baseline;
         justify-content: space-between;
 
