@@ -1,0 +1,552 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    color: #54585a;
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 24px
+}
+
+/* HEADER */
+
+.header-home {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    font-family: Rubik-Medium;
+    z-index: 100;
+    opacity: 0.9;
+}
+
+.group-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #099d8d;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    height: 60px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #14d9c4;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    height: 45px;
+}
+
+.menu-options-link {
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-options-link:hover {
+    font-size: 125%;
+}
+
+/*CONTACT*/
+
+.contact-section{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.second-title {
+    text-transform: uppercase;
+    color: #099d8d;
+    margin:30px 0;
+    font-size: 24px;
+}
+
+.paragraph {
+    text-align: center;
+    color: #54585a;
+    margin: 0 15px 30px 15px;
+}
+/* FORM */
+
+.form-instructions{
+    font-size:12px;
+    line-height:12px;
+    color:#54585a;
+    display:flex;
+    justify-content:center;
+    margin-bottom:60px;
+}
+
+#asterisk{
+    color:#14d9c4;
+    font-size: 16px;
+    vertical-align:-0.15em;
+}
+
+.contact-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #54585a;
+    margin: 0 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.field-description{
+    display:block;
+    font-size:14px;
+    margin:0;
+    line-height: 14px;
+
+}
+
+.input-box{
+    height:45px;
+    width:100%;
+    margin:7px 0 15px;  
+    padding-left:15px;
+}
+
+.message-box{
+    height:105px;
+    width:100%;
+    margin:7px 0 15px;
+    padding:11px 15px;
+}
+::placeholder{
+    font-family:"Rubik";
+    color: #b8b8b9;
+}
+
+#email{
+    color:#54585a;
+}
+
+.invisible{
+    visibility: hidden;
+}
+.send-button{
+    width:100%;
+    height:45px;
+    background-color: #099d8d;
+    border:solid 1px  #099d8d;
+    border-radius:3px;
+    text-transform: uppercase;
+    font-family: Rubik;
+    font-size: 16px;
+    color: #ffffff;
+}   
+
+/* FOOTER */
+
+.footer-home {
+    display: block;
+    background-color: white;
+    height: 250px;
+    border-top: 1px solid #b8b8b9;
+    margin-top: 40px; 
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b8b8b9;
+    font-size: 14px;
+    font-family: Rubik;
+    margin: 30px 0 20px 0;
+}
+
+.footer-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.footer-options-link {
+    font-family: Rubik;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #54585a;
+    opacity: 0.75;
+}
+
+.box-logo-adalab {
+    display: block;
+    /*display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center; */
+    height: 45px; 
+    /* width: 115.9px; */
+    text-align: center; 
+    background: url(../images/logo-adalab.png); /* cambié la imagen a fondo porque era más fácil controlarla */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 30px 0 45px 0; 
+}
+
+
+/* HERO */
+
+.container-hero {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-image {
+    height:421px;
+    width:100vw;
+    max-width:100%;
+    background: url(../images/hero-contact.jpeg);
+    background-size:cover;
+    overflow:hidden;
+}
+
+
+/* STYLES TABLE VERSION ---------------------------------------------------------------------*/
+
+@media all and (min-width: 768px) {
+    
+    /*Contact*/
+  
+.contact-section {
+    padding: 0 163px;
+    margin:0;
+    width:100vw;
+}
+ 
+.paragraph {
+   width:100%;
+ }
+/* FORM */
+.form{
+    width:100%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.send-button{
+    width:45%;
+    align-self: flex-end;
+}   
+
+
+/* Footer RESPONSIVE  */
+
+    .footer-home{
+        Position:relative;
+        background-color: white;
+        height: 170px;
+        border-top: 1px solid #b8b8b9;
+        margin-top: 40px; 
+        
+    }
+    .footer-options{
+        
+        display: inline-block;
+        margin: 0;
+        height: 90px;
+        width: 324px;
+        text-align: right;
+        position:absolute;
+        right: 45px;
+        top:24px;
+
+    }  
+    .footer-options-link{
+        display: inline-block;
+        font-family: Rubik;
+        font-style: normal;
+        font-stretch: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color:#54585a;
+        opacity: 0.75;
+        }
+
+    .copyright{
+        display: inline-block; 
+        color: #b8b8b9;
+        font-size:14px;
+        font-family: Rubik; 
+        margin: 0; 
+        position: absolute;
+        left: 45px;
+        top:24px;
+        }
+    .box-logo-adalab{
+        display: inline-block;
+        margin-bottom:45px;
+        margin-left:45px;
+        height:45px;
+        width: 115.9px;
+        background: url(../images/logo-adalab.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        position: absolute;
+        left: 45px;
+        bottom: 60px;
+        }
+    
+
+    /* HEADER */
+
+    .header-home{
+        position:fixed;
+        width: 100vw;
+        display: flex;
+        color: #ffffff;
+        flex-direction: row;
+        font-family: Rubik-Medium;
+        z-index: 100;
+        opacity: 0.9;
+        height:60px;
+        background-color: #099d8d;
+       
+        align-items: baseline;
+        justify-content: space-between;
+
+    }
+    .group-name{
+        display: flex;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 30px;
+        margin: 14px 0 16px 45px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: lighter;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .menu-options{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 30px;
+        margin: 14px 45px 16px 0;
+        list-style: none;
+        padding: 0;
+        background-color: #099d8d;
+    }
+    .menu-options-link {
+        font-family: Rubik;
+        font-size: 15px;
+        /*font-weight: 500;*/
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:white;
+    }
+    .menu-options-link:hover{
+        font-size: 125%;
+    }
+   
+
+
+
+/* STYLES DESKTOP VERSION ------------------------------------------*/
+
+@media all and (min-width: 1200px) {
+    
+ /* HEADER DESKTOP*/
+
+    .header-home{
+        position:fixed;
+        width: 100vw;
+        display: flex;
+        color: #ffffff;
+        flex-direction: row;
+        font-family: Rubik-Medium;
+        z-index: 100;
+        opacity: 0.9;
+        height:60px;
+        background-color: #099d8d;
+        align-items: baseline;
+        justify-content: space-between;
+
+    }
+    .group-name{
+        display: flex;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 30px;
+        margin: 15px 0 15px 142px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: lighter;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .menu-options{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 30px;
+        margin: 15px 138px 15px 0;
+        list-style: none;
+        padding: 0;
+        background-color: #099d8d;
+    }
+    .menu-options-link {
+        font-family: Rubik;
+        font-size: 15px;
+        /*font-weight: 500;*/
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:white;
+    }
+    .menu-options-link:hover{
+        font-size: 125%;
+    }
+
+    /*CONTACT*/
+  
+    .contact-section {
+        padding: 45px 300px;
+        margin:0;
+        width:100vw;
+    }
+    /* FORM */
+
+    .form{
+        width:100%;
+        display: flex;
+        flex-direction: column;  
+    }
+    .mailPhone {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+    }
+    
+    .email{
+        width:70%;
+        margin-right:22px;
+    }
+
+    .phone{
+        margin-left:22px;
+        width:30%;
+    }      
+    /*FOOTER DESKTOP*/
+
+
+    .footer-home{
+        Position:relative;
+        background-color: white;
+        height: 170px;
+        border-top: 1px solid #b8b8b9;
+        margin-top: 40px; 
+        
+    }
+    .footer-options{
+        
+        display: inline-block;
+        margin: 0;
+        height: 90px;
+        width: 324px;
+        text-align: right;
+        position:absolute;
+        right: 138px;
+        top:24px;
+
+    }  
+    .footer-options-link{
+        display: inline-block;
+        font-family: Rubik;
+        font-style: normal;
+        font-stretch: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color:#54585a;
+        opacity: 0.75;
+        }
+
+    .copyright{
+        display: inline-block; 
+        color: #b8b8b9;
+        font-size:14px;
+        font-family: Rubik; 
+        margin: 0; 
+        position: absolute;
+        left: 138px;
+        top:24px;
+        }
+    .box-logo-adalab{
+        display: inline-block;
+        margin-bottom:45px;
+        margin-left:45px;
+        height:45px;
+        width: 115.9px;
+        background: url(../images/logo-adalab.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        position: absolute;
+        left: 138px;
+        bottom: 51px;
+        }
+    }
+
+    /* TEAM DESKTOP */
+    .paragraph {
+        text-align: center;
+        color: #54585a;
+        margin: 0 299px 30px 299px;
+    }
+}
