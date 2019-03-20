@@ -8,7 +8,7 @@
             <p>All fields marked with <sup id="asterisk">*</sup> are required</p>
         </div>
 
-        <form class="form" method="post" action="/action_page.php">
+        <form class="form" method="post" action="#">
             <label class="field-description" for="fullName">Full name <sup id="asterisk">*</sup></label>
             <input class="input-box" type="text" name="fullName" id="fullName" placeholder="Full Name..." required>
             <div class="mailPhone">
@@ -18,7 +18,7 @@
                 </div>
                 <div class=phone>
                     <label class="field-description" for="phoneNumber">Phone number</label>
-                    <input class="input-box" type="number" name="phoneNumber" id="phoneNumber"
+                    <input class="input-box" type="number" minlength="9" name="phoneNumber" id="phoneNumber"
                         placeholder="Ex:123456789">
                 </div>
             </div>
@@ -26,7 +26,7 @@
             <textarea class="message-box" name="message" id="message" placeholder="How can we help?" required></textarea>
 
             <label class="invisible" for="submit">Submit button</label>
-            <input class="send-button" type="button" value="Send">
+            <input class="send-button" type="submit" value="Send">
 
         </form>
     </div>
