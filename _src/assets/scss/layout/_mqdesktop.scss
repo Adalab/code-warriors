@@ -1,0 +1,202 @@
+/* STYLES DESKTOP VERSION ------------------------------------------*/
+
+/* ADALABER SECTION */
+
+@media all and (min-width: 1200px) {
+    .rectangle-all-info {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+    }
+    /* iz y derecha para controlar el bloques alternos junto con img */
+    .r-left {
+        flex-direction: row;
+        text-align: left;
+        margin-left: 138px;
+    }
+    .r-right {
+        flex-direction: row-reverse;
+        text-align: right;
+        margin-right: 130px;
+    }
+    .personal-pic {
+        align-content: center;
+        width: 278px;
+        height: 278px;
+        border-radius: 5.5px;
+        border: solid 7px rgba(0, 0, 0, 0.08);
+    }
+    .name {
+        font-size: 20px;
+        color:$fullblack;
+        font-weight: normal;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /* clase iz y dercha para controlar parrafos alternos */
+    .p-right {
+        width: 440px;
+        text-align: right;
+    }
+    .p-left {
+        width: 440px;
+        text-align: left;
+    }
+    .rrss-container {
+        list-style: none;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /* Strengths & Weaknesses */
+    .content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .section-desciption {
+        padding: 55px 0 55px
+    }
+
+
+ /* HEADER DEKTOP*/
+
+    .header-home{
+        position:fixed;
+        width: 100vw;
+        display: flex;
+        color: $snowwhite;
+        flex-direction: row;
+        font-family: Rubik-Medium;
+        z-index: 100;
+        opacity: 0.9;
+        height:60px;
+        background-color:$greenadalab;
+        align-items: baseline;
+        justify-content: space-between;
+
+    }
+    .group-name{
+        display: flex;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 30px;
+        margin: 15px 0 15px 142px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: lighter;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color:$snowwhite;
+    }
+    .menu-options{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 30px;
+        margin: 15px 138px 15px 0;
+        list-style: none;
+        padding: 0;
+        background-color:$greenadalab;
+    }
+    .menu-options-link {
+        font-family: Rubik;
+        font-size: 15px;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:$snowwhite;
+    }
+    .menu-options-link:hover{
+        font-size: 125%;
+    }
+
+
+    /*FOOTER DESKTOP*/
+
+
+    .footer-home{
+        Position:relative;
+        background-color: $snowwhite;
+        height: 170px;
+        border-top: 1px solid $greycopyright;
+        margin-top: 40px; 
+        
+    }
+    .footer-options{
+        
+        display: inline-block;
+        margin: 0;
+        height: 90px;
+        width: 324px;
+        text-align: right;
+        position:absolute;
+        right: 138px;
+        top:24px;
+
+    }  
+    .footer-options-link{
+        display: inline-block;
+        font-family: Rubik;
+        font-style: normal;
+        font-stretch: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color:$greyparagraph;
+        opacity: 0.75;
+        }
+
+    .copyright{
+        display: inline-block; 
+        color: $greycopyright;
+        font-size:14px;
+        font-family: Rubik; 
+        margin: 0; 
+        position: absolute;
+        left: 138px;
+        top:24px;
+        }
+    .box-logo-adalab{
+        display: inline-block;
+        margin-bottom:45px;
+        margin-left:45px;
+        height:45px;
+        width: 115.9px;
+        background: url(../images/logo-adalab.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        position: absolute;
+        left: 138px;
+        bottom: 51px;
+        }
+
+
+    /* HERO DESKTOP */
+    .container-moto{
+        /* container size properties */
+        height: 90px; /*tablet */ 
+        width: 574px;
+        /* container position */
+        position: absolute; 
+        top: 331px;
+        left: 138px;
+        
+        /* text properties */
+        background-color: $snowwhite;
+        opacity: 0.9;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    /* TEAM DESKTOP */
+    .paragraph {
+        text-align: center;
+        color:$greyparagraph;
+        margin: 0 299px 30px 299px;
+    }
+}
