@@ -41,6 +41,11 @@ body {
     font-stretch: normal;
     line-height: 1.88;
     letter-spacing: normal;
+    transition: font-size ease .25s, text-shadow ease-out .5s;
+    &:hover{
+        font-size: 17px;
+        text-shadow: 0 0 1em black, 0 0 0.2em black;
+    }
     
 }
 
@@ -66,10 +71,11 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
+    transition: font-size ease-in .5s;
 }
 
 .menu-options-link:hover {
-    font-size: 125%;
+    font-size: 16px;
 }
 
 /*CONTACT*/
