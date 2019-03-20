@@ -1,12 +1,14 @@
 /* ADALABER SECTION */
 
-/* He renombrado y añadido clases para manejarme mejor */
-
 .rectangle-all-info {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
     padding: 15px;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
 }
 
 .container-personal-pic {
@@ -24,7 +26,7 @@
 
 .name {
     font-size: 20px;
-    color:$fullblack;
+    color: $fullblack;
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -33,12 +35,9 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
-/* esta clase la compartia con Eva en un principio. Pero la he definido nueva para que solo afecte a mi seccion */
-
 .paragraph-info {
     text-align: center;
-    color:$greyparagraph;
+    color: $greyparagraph;
     margin: 0 15px 30px 15px;
 }
 
@@ -50,7 +49,7 @@
     display: inline;
     position: relative;
     padding: 0 10px;
-    color:$greenadalab;
+    color: $greenadalab;
 }
 
 .rss-addres::before {
@@ -64,6 +63,5 @@
 }
 
 .rss-addres a {
-    color:$greenadalab;
-
+    color: $greenadalab;
 }

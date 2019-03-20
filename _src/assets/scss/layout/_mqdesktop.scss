@@ -3,21 +3,24 @@
 /* ADALABER SECTION */
 
 @media all and (min-width: 1200px) {
-    .rectangle-all-info {
-        display: flex;
-        flex-direction: row;
-        padding: 15px;
+    // .rectangle-all-info {
+    //     display: flex;
+    //     flex-direction: row;
+    //     padding: 15px;
+    // }
+    .perinfo-container, .rectangle-all-info:nth-child(odd) .perinfo-container{
+        grid-column: 2/4;
     }
-    /* iz y derecha para controlar el bloques alternos junto con img */
+
     .r-left {
         flex-direction: row;
         text-align: left;
-        margin-left: 138px;
+        // margin-left: 138px;
     }
     .r-right {
         flex-direction: row-reverse;
         text-align: right;
-        margin-right: 130px;
+        // margin-right: 130px;
     }
     .personal-pic {
         align-content: center;
@@ -34,13 +37,12 @@
         margin-right: 15px;
         margin-left: 15px;
     }
-    /* clase iz y dercha para controlar parrafos alternos */
     .p-right {
-        width: 440px;
+        // width: 440px;
         text-align: right;
     }
     .p-left {
-        width: 440px;
+        // width: 440px;
         text-align: left;
     }
     .rrss-container {
@@ -199,4 +201,33 @@
         color:$greyparagraph;
         margin: 0 299px 30px 299px;
     }
+     /*CONTACT*/
+  
+     .contact-section {
+        padding: 45px 300px;
+        margin:0;
+        width:100vw;
+    }
+    /* FORM */
+
+    .form{
+        width:100%;
+        display: flex;
+        flex-direction: column;  
+    }
+    .mailPhone {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+    }
+    
+    .email{
+        width:70%;
+        margin-right:22px;
+    }
+
+    .phone{
+        margin-left:22px;
+        width:30%;
+    } 
 }

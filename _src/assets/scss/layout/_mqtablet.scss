@@ -5,10 +5,22 @@
 
 @media all and (min-width: 768px) {
     .rectangle-all-info {
-        display: flex;
-        flex-direction: row;
-        padding: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        display: grid;
     }
+    .perinfo-container {
+        grid-column: 2/5;
+        grid-row:1;
+    }
+    .rectangle-all-info:nth-child(odd) .perinfo-container {
+        grid-column: 1/4;
+    }
+ 
+    .rectangle-all-info:nth-child(odd) .container-personal-pic{
+        grid-column: 4/5;
+        grid-row: 1;
+    } 
     /* he añadido clases nuevas para poder trabajar la direccion y alineado izq derch  */
     .r-left {
         flex-direction: row;
@@ -23,8 +35,9 @@
         width: 205px;
         height: 205px;
         border-radius: 4px;
-        border: solid 5px rgba(0, 0, 0, 0.08);
+        border: solid 5px rgba(0, 0, 0, 0.08);        
     }
+
     .name {
         font-size: 20px;
         color:$fullblack;
@@ -202,6 +215,32 @@
         justify-content: center;
         
     }
+    /*Contact*/
+    
+    .contact-section {
+        padding: 0 163px;
+        margin:0;
+        width:100vw;
+    }
+    
+    .paragraph-contact {
+    width:100%;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+
+    /* FORM */
+    .form{
+        width:100%;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .send-button{
+        width:45%;
+        align-self: flex-end;
+    }   
+
 }
 
 
