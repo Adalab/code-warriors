@@ -120,16 +120,11 @@
 
 
     .footer-home{
-        // position:relative;
+        Position:relative;
         background-color: $snowwhite;
         height: 170px;
         border-top: 1px solid $greycopyright;
         margin-top: 40px; 
-
-        //DISPOSICION GRID APROACH 1 3COLUMNAS
-       display: grid;
-       grid-template-columns:1fr, 50%, 1fr; 
-
         
     }
     .footer-options{
@@ -139,9 +134,9 @@
         height: 90px;
         width: 324px;
         text-align: right;
-        // position:absolute;
-        // right: 138px;
-        // top:24px;
+        position:absolute;
+        right: 138px;
+        top:24px;
 
     }  
     .footer-options-link{
@@ -163,9 +158,9 @@
         font-size:14px;
         font-family: Rubik; 
         margin: 0; 
-        // position: absolute;
-        // left: 138px;
-        // top:24px;
+        position: absolute;
+        left: 138px;
+        top:24px;
         }
     .box-logo-adalab{
         display: inline-block;
@@ -177,9 +172,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0;
-        // position: absolute;
-        // left: 138px;
-        // bottom: 51px;
+        position: absolute;
+        left: 138px;
+        bottom: 51px;
         }
 
 
