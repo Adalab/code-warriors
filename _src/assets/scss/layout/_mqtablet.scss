@@ -85,19 +85,19 @@
 
 /* Footer RESPONSIVE  */
 
-    .footer-home{
+    .footer-home {
         // position:relative;
         background-color: $snowwhite;
         height: 170px;
         border-top: 1px solid $greycopyright;
         margin-top: 40px; 
-        //DISPOSITION GRID FIRST
+        //DISPOSITION GRID
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
-//    NUEVA CLASE CREADA PARA EL NAV para poder moverla en el GRID
+//    NUEVA CLASE CREADA PARA EL NAV para poder moverla en el GRID menu-footer
 
     .menu-footer {
         display:flex;
@@ -110,6 +110,7 @@
         grid-column: 3/4;
         grid-row: 1/4;
     }
+    
     .footer-options{
         display: inline-block;
         margin: 0;

@@ -117,67 +117,32 @@
 
 
     /*FOOTER DESKTOP*/
-
-
-    .footer-home{
-        Position:relative;
-        background-color: $snowwhite;
-        height: 170px;
-        border-top: 1px solid $greycopyright;
-        margin-top: 40px; 
-        
+    .footer-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
-    .footer-options{
-        
-        display: inline-block;
-        margin: 0;
-        height: 90px;
-        width: 324px;
-        text-align: right;
-        position:absolute;
-        right: 138px;
-        top:24px;
-
-    }  
-    .footer-options-link{
-        display: inline-block;
-        font-family: Rubik;
-        font-style: normal;
-        font-stretch: normal;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 20px;
-        color:$greyparagraph;
-        opacity: 0.75;
-        }
-
+    .menu-footer {
+        margin-right: 250px;
+        // DISPOSITION GRID
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
     .copyright{
-        display: inline-block; 
-        color: $greycopyright;
-        font-size:14px;
-        font-family: Rubik; 
-        margin: 0; 
-        position: absolute;
-        left: 138px;
-        top:24px;
-        }
-    .box-logo-adalab{
-        display: inline-block;
-        margin-bottom:45px;
-        margin-left:45px;
-        height:45px;
-        width: 115.9px;
-        background: url(../images/logo-adalab.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 0;
-        position: absolute;
-        left: 138px;
-        bottom: 51px;
-        }
-
-
+        margin-left: 200px;
+        //DISPOSICION GRID
+        grid-column: 1/2;
+        grid-row:1/2;
+        //CENTRANDO CON GRID
+        justify-content: left;
+        text-align: left;
+    }
+    .box-logo-adalab {
+        margin-left: 220px;
+        //DISPOSICION GRID
+        grid-column: 1/2;
+        grid-row:2/3;
+    }
     /* HERO DESKTOP */
     .container-moto{
         /* container size properties */
