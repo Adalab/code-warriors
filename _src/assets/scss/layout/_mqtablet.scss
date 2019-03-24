@@ -86,28 +86,40 @@
 /* Footer RESPONSIVE  */
 
     .footer-home{
-        position:relative;
+        // position:relative;
         background-color: $snowwhite;
         height: 170px;
         border-top: 1px solid $greycopyright;
         margin-top: 40px; 
-        //DISPOSITION GRID APROACH 3 COLUMNS
+        //DISPOSITION GRID FIRST
         display: grid;
-        grid-column: 20%, 1fr, 20%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
-        
+//    NUEVA CLASE CREADA PARA EL NAV para poder moverla en el GRID
+
+    .menu-footer {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        margin-right: 75px;
+        // DISPOSITION GRID
+        grid-column: 3/4;
+        grid-row: 1/4;
     }
     .footer-options{
-        
         display: inline-block;
         margin: 0;
         height: 90px;
         width: 324px;
         text-align: right;
-        position:absolute;
-        right: 45px;
-        top:24px;
-
+        // position:absolute;
+        // right: 45px;
+        // top:24px;
+     
     }  
     .footer-options-link{
         display: inline-block;
@@ -120,17 +132,25 @@
         line-height: 20px;
         color:$greyparagraph;
         opacity: 0.75;
+        
         }
 
     .copyright{
-        display: inline-block; 
+        display:flex; 
         color: $greycopyright;
         font-size:14px;
         font-family: Rubik; 
         margin: 0; 
-        position: absolute;
-        left: 45px;
-        top:24px;
+        // position: absolute;
+        // left: 45px;
+        // top:24px;
+        //DISPOSICION GRID
+        grid-column: 1/2;
+        grid-row:1/2;
+        //CENTRANDO CON GRID
+        justify-content: center;
+        align-items: center;
+
         }
     .box-logo-adalab{
         display: inline-block;
@@ -142,9 +162,15 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0;
-        position: absolute;
-        left: 45px;
-        bottom: 60px;
+        // position: absolute;
+        // left: 45px;
+        // bottom: 60px;
+        //DISPOSICION GRID
+        grid-column: 1/2;
+        grid-row:2/3;
+        // CENTRANDO CON GRID:
+   
+
         }
     
 
