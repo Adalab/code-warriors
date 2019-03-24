@@ -7,6 +7,10 @@
     height: 250px;
     border-top: 1px solid $greycopyright;
     margin-top: 40px; 
+// DISPOSICION GRID
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
 }
 
 .copyright {
