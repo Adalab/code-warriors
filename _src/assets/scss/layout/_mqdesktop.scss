@@ -123,13 +123,13 @@
         grid-template-rows: 1fr 1fr;
     }
     .menu-footer {
-        margin-right: 250px;
+        margin-right: 100px;
         // DISPOSITION GRID
         grid-column: 3/4;
         grid-row: 1/4;
     }
     .copyright{
-        margin-left: 200px;
+        margin-left: 100px;
         //DISPOSICION GRID
         grid-column: 1/2;
         grid-row:1/2;
@@ -138,7 +138,7 @@
         text-align: left;
     }
     .box-logo-adalab {
-        margin-left: 220px;
+        margin-left: 120px;
         //DISPOSICION GRID
         grid-column: 1/2;
         grid-row:2/3;
