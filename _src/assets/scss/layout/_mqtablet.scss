@@ -86,11 +86,15 @@
 /* Footer RESPONSIVE  */
 
     .footer-home{
-        Position:relative;
+        position:relative;
         background-color: $snowwhite;
         height: 170px;
         border-top: 1px solid $greycopyright;
         margin-top: 40px; 
+        //DISPOSITION GRID APROACH 3 COLUMNS
+        display: grid;
+        grid-column: 20%, 1fr, 20%;
+
         
     }
     .footer-options{
