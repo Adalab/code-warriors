@@ -136,11 +136,13 @@
         }
 
     .copyright{
-        display:flex; 
+        // display:flex; 
         color: $greycopyright;
         font-size:14px;
         font-family: Rubik; 
-        margin: 0; 
+        margin: 10px; 
+        margin-left: 60px;
+        margin-top: 50px;
         // position: absolute;
         // left: 45px;
         // top:24px;
@@ -148,28 +150,34 @@
         grid-column: 1/2;
         grid-row:1/2;
         //CENTRANDO CON GRID
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        text-align: left;
+        
+        
 
         }
     .box-logo-adalab{
-        display: inline-block;
-        margin-bottom:45px;
-        margin-left:45px;
-        height:45px;
-        width: 115.9px;
+        // margin-bottom:45px;
+        // margin-left:45px;
+        // height:45px;
+        // width: 115.9px;
         background: url(../images/logo-adalab.png);
         background-size: contain;
         background-repeat: no-repeat;
-        margin: 0;
+        // margin: 0;
         // position: absolute;
         // left: 45px;
         // bottom: 60px;
+
         //DISPOSICION GRID
         grid-column: 1/2;
         grid-row:2/3;
         // CENTRANDO CON GRID:
-   
+        // display: inline-block;
+        margin:0px;
+        margin-left: 60px;
+        justify-content: center;
+        text-align: left;
 
         }
     

@@ -14,7 +14,7 @@
 }
 
 .copyright {
-    display: flex;
+    //display: flex;
     flex-direction: column;
     align-items: center;
     color: $greycopyright;
@@ -52,7 +52,8 @@
 .box-logo-adalab {
     display: block;
     height: 45px; 
-    text-align: center; 
+    width: 200px;
+    
     background: url(../images/logo-adalab.png); /* cambié la imagen a fondo porque era más fácil controlarla */
     background-size: contain;
     background-repeat: no-repeat;
